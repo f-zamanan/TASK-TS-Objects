@@ -39,6 +39,12 @@ function addReview(
   comment: string
 ): ReviewedBook {
   // write your code here...
+  const review = {
+    reviewer: reviewer,
+    comment: comment,
+  };
+
+  book.reviews?.push(review);
 
   return book;
 }
